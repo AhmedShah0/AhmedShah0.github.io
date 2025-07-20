@@ -24,7 +24,7 @@ body {
 
 .toast {
   position: fixed;
-  top: 30px;
+  top: 130px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #333;
@@ -40,7 +40,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
   .toast {
     font-size: 13px;
     padding: 10px 16px;
