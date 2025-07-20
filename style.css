@@ -167,6 +167,17 @@ nav {
   border-radius: 8px;
 }
 
+.pdf-links a {
+  color: #004080;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pdf-links a:hover {
+  text-decoration: underline;
+}
+
 .hidden {
   display: none;
 }
