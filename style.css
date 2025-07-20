@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make page take full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper {
+  flex: 1;
+}
+
+/* This part pushes footer down */
+.content {
+  flex: 1;
+}
+
+/* Footer styling (keep as-is or adjust) */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Make page fill the full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Push footer down if content is short */
+.wrapper {
+  min-height: calc(100vh - 60px);
+  /* Adjust 60px if your footer is taller */
+  padding-bottom: 60px;
+  /* Prevent content from overlapping the footer */
+  box-sizing: border-box;
+}
+
+footer {
+  height: 60px;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.faculty-info h1 {
+  font-size: 24px;
+}
+
+nav {
+  background-color: #005599;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .dropdown:hover>ul {
+  display: block;
+}
+
+.navbar .dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: #0077cc;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.navbar .dropdown ul li a {
+  padding: 10px;
+  color: white;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #0077cc;
+  list-style: none;
+  padding: 10px;
+  border-radius: 4px;
+  min-width: 180px;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: white;
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #005fa3;
+}
+
+.hero {
+  background-image: url("images/institution.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.content {
+  padding: 40px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.page-section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .additional {
+  margin-top: 10px;
+  font-size: 14px;
+}
