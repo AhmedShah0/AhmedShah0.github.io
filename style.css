@@ -24,7 +24,7 @@ body {
 
 .toast {
   position: fixed;
-  top: 20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #333;
@@ -36,6 +36,15 @@ body {
   z-index: 9999;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   transition: opacity 0.3s ease-in-out;
+  max-width: 90vw;
+  text-align: center;
+}
+
+@media screen and (max-width:480px) {
+  .toast {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
 }
 
 /* Footer styling (keep as-is or adjust) */
