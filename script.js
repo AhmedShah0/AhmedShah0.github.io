@@ -18,6 +18,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  function showToast(id, duration = 3000) {
+    const toast = document.getElementById(id);
+    toast.classList.remove("hidden");
+    setTimeout(() => {
+      toast.classList.add("hidden");
+    }, duration);
+  }
+
+  // Trigger toast on any download click
+  document.querySelectorAll('a[download]').forEach(link => {
+    link.addEventListener('click', () => {
+      showToast("download-toast");
+    });
+  });
+
   const sectionLinks = document.querySelectorAll("[data-section]");
   const sections = document.querySelectorAll(".page-section");
 
